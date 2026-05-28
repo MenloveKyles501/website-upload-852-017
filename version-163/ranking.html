@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>幻影片库 - 热榜</title>
+  <meta name="description" content="幻影片库热榜页，展示根据年份与内容特征生成的静态榜单。">
+  <meta name="keywords" content="热榜,排行榜,电影榜单,静态站">
+  <link rel="canonical" href="ranking.html">
+  <meta property="og:title" content="幻影片库 - 热榜">
+  <meta property="og:description" content="幻影片库热榜页，展示根据年份与内容特征生成的静态榜单。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/original.css">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white shadow-lg shadow-blue-500/20">影</div>
+      <div>
+        <div class="text-lg font-bold text-white">幻影片库</div>
+        <div class="text-xs tracking-[0.2em] text-slate-400">STATIC CINEMA</div>
+      </div>
+    </a>
+    <nav class="hidden items-center gap-2 md:flex">
+      <a class="px-4 py-2 rounded-full border text-slate-300 hover:text-white hover:bg-white/5 border-transparent transition" href="index.html">首页</a>
+<a class="px-4 py-2 rounded-full border text-white bg-white/10 border-white/20 transition" href="ranking.html">热榜</a>
+<a class="px-4 py-2 rounded-full border text-slate-300 hover:text-white hover:bg-white/5 border-transparent transition" href="index.html#catalog">全部影片</a>
+    </nav>
+    <a href="#catalog" class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 transition hover:bg-white/10 md:hidden">目录</a>
+  </div>
+</header>
+<main class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+  <div class="rounded-[2rem] border border-white/10 bg-white/5 p-6 sm:p-8">
+    <div class="text-sm uppercase tracking-[0.25em] text-slate-400">榜单</div>
+    <h1 class="mt-2 text-4xl font-black text-white">热榜与推荐</h1>
+    <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-300">这里展示站内热度最高的 50 部影片，帮助用户快速找到最值得看的内容。每一项都可直接打开对应的详情页与播放器。</p>
+  </div>
+
+  <div class="mt-8 grid gap-4">
+    <div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">1</div>
+  <a href="movie-0008.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">银翼杀手</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2049</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">未来洛杉矶，复制人猎人K发现一个可能颠覆世界的秘密，踏上追寻真相之路。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/141.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="银翼杀手海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">2</div>
+  <a href="movie-0105.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">重生从村医务室开始</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2025</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">功成名就的医学专家重生回八十年代，成为乡村赤脚医生，用未来知识改变家乡。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/118.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="重生从村医务室开始海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">3</div>
+  <a href="movie-0034.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">愿以轻舟度余生</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2025</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">逃离大城市的失意男女，在江南水乡的乌篷船上，共同经营一家移动书店与咖啡馆。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/78.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="愿以轻舟度余生海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">4</div>
+  <a href="movie-0020.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">重返少年，开局选择全能系统</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2025</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">35岁社畜重生回高中，绑定“全能选择系统”，每次抉择都能获得神奇能力。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/42.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="重返少年，开局选择全能系统海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">5</div>
+  <a href="movie-0095.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">极品外卖员降服绝世风华三姐妹</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2025</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">身怀绝技的外卖小哥，为完成奇葩订单，被迫成为三位难搞千金大小姐的私人管家。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/133.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="极品外卖员降服绝世风华三姐妹海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">6</div>
+  <a href="movie-0057.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">军武次位面第一季</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2025</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">未来战争中，一支由问题士兵组成的“次位面”小队，驾驶试验型机甲执行绝命任务。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/89.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="军武次位面第一季海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">7</div>
+  <a href="movie-0114.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">凌少你把我当什么人了</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2025</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">为应付家族联姻，霸总提出契约恋爱，却不知眼前“拜金女”正是他苦寻多年的救命恩人。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/7.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="凌少你把我当什么人了海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">8</div>
+  <a href="movie-0047.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">狮子王：木法沙传奇</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2025</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">讲述少年木法沙如何从顽皮王子，成长为荣耀王国伟大君王的壮阔冒险史诗。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/60.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="狮子王：木法沙传奇海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">9</div>
+  <a href="movie-0128.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">废柴兄弟2</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">一对废柴兄弟误打误撞接手濒危养老院，用离谱创意开启爆笑守护之旅。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/146.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="废柴兄弟2海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">10</div>
+  <a href="movie-0122.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">YAKITORI：行星轨道敢死队</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">一支由地球罪犯组成的特种部队，被投放到外星轨道战场，用生命换取自由。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/23.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="YAKITORI：行星轨道敢死队海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">11</div>
+  <a href="movie-0109.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">高端的试探太极</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">一场看似普通的民间太极推手交流，实则是两个商业巨头间不见硝烟的资本博弈。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/53.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="高端的试探太极海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">12</div>
+  <a href="movie-0037.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">琅琊榜之风起长林</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">长林王府在新君猜忌与敌国阴谋中风雨飘摇，新一代青年将领扛起忠义与家族重担。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/71.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="琅琊榜之风起长林海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">13</div>
+  <a href="movie-0135.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">总裁夫人又美又飒</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">隐婚总裁夫人为调查公司内鬼，伪装新人入职，上演职场“捉鬼”爽剧。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/104.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="总裁夫人又美又飒海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">14</div>
+  <a href="movie-0013.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">本想败国，却名垂青史</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">现代废柴穿越成亡国昏君，一心求死回归，却阴差阳错成为千古一帝。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/51.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="本想败国，却名垂青史海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">15</div>
+  <a href="movie-0148.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">新版：冷王盛宠法医妃</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">现代女法医穿成古代弃妃，凭专业手艺帮冷面王爷破奇案，携手搅动朝堂。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/36.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="新版：冷王盛宠法医妃海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">16</div>
+  <a href="movie-0066.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">我在空间流放之地带全家崛起</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">全家被误判流放蛮荒星球，理工男父亲用科学知识，带领家人在异星建立家园。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/136.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="我在空间流放之地带全家崛起海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">17</div>
+  <a href="movie-0145.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">我死后，暴君哭着求我别死</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">和亲公主心死自戕后重生，冷眼旁观暴君悔不当初，开启复仇权谋之路。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/9.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="我死后，暴君哭着求我别死海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">18</div>
+  <a href="movie-0102.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">唐朝诡事录之西行</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">卢凌风与苏无名奉旨西行，却卷入丝绸之路上连环奇案，揭开“西域妖僧”之谜。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/110.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="唐朝诡事录之西行海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">19</div>
+  <a href="movie-0090.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">生意天才白社长2</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">剧集</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">“白社长”进军海外，在韩国小镇开设融合餐厅，用商业智慧化解文化冲突与经营危机。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/101.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="生意天才白社长2海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">20</div>
+  <a href="movie-0062.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">毕业后资助生和我断绝关系</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">资助贫困生十年的企业家，在其名校毕业后收到一纸冷酷的“关系断绝声明”。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/13.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="毕业后资助生和我断绝关系海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">21</div>
+  <a href="movie-0023.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">重回十年前我放弃了救我三次的丈夫</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2024</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">重生回婚礼前夜，她决心避开未来会牺牲三次救她的丈夫，却陷入更大的命运谜团。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/39.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="重回十年前我放弃了救我三次的丈夫海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">22</div>
+  <a href="movie-0005.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">流人第三季</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">被流放的王牌特工小组，被迫卷入一场足以颠覆英国政坛的致命阴谋。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/34.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="流人第三季海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">23</div>
+  <a href="movie-0147.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">镇国神王</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">沉睡千年的上古战神在现代都市苏醒，发现神力衰退，需重新修炼称王。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/35.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="镇国神王海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">24</div>
+  <a href="movie-0140.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">衣起出发</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">毒舌时尚主编被迫与土味老妈自驾西北，一路穿搭改造引爆笑泪之旅。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/100.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="衣起出发海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">25</div>
+  <a href="movie-0033.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">龙娘七七七埋藏的宝藏</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">天才游戏少女的幽灵，与废柴大学生搭档，寻找她生前藏匿的巨额遗产“宝藏”。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/107.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="龙娘七七七埋藏的宝藏海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">26</div>
+  <a href="movie-0096.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">魔力学院之我是麻瓜</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">剧集</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">毫无魔力的“麻瓜”少年误入魔法学院，靠科学知识和另类思维成为校园“异类宗师”。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/94.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="魔力学院之我是麻瓜海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">27</div>
+  <a href="movie-0077.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">夏洛克的孩子们</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">银行内部一亿日元凭空消失，涉案的“孩子们”在恐慌中试图掩盖真相。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/47.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="夏洛克的孩子们海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">28</div>
+  <a href="movie-0124.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">婆婆听不懂人话</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">海归儿媳与方言婆婆的“加密”日常，笑泪交织中解码亲情密码。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/144.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="婆婆听不懂人话海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">29</div>
+  <a href="movie-0074.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">警戒第二季</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">剧集</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">缉毒卧底为救线人暴露身份，被迫与昔日搭档展开生死博弈。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/30.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="警戒第二季海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">30</div>
+  <a href="movie-0069.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">重生后我倒追渣男死对头</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">重生回被渣男求婚前夜，我果断拒绝，转而热烈追求他那位冷酷的商业死对头。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/56.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="重生后我倒追渣男死对头海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">31</div>
+  <a href="movie-0050.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">圣旨为媒帝后互怼成佳话</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">一纸荒唐圣旨，将互看不顺眼的将军之女与闲散王爷强行绑成夫妻。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/16.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="圣旨为媒帝后互怼成佳话海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">32</div>
+  <a href="movie-0065.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">侯门嫡女要反击</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">重生归来的侯府嫡女，利用先知步步为营，向所有亏欠她的人讨回公道。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/83.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="侯门嫡女要反击海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">33</div>
+  <a href="movie-0120.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">怦然心动的小姐姐第二季</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">成功牵手的“养成系”姐弟恋，面临职场危机与家庭压力的双重考验，爱能否继续？</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/117.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="怦然心动的小姐姐第二季海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">34</div>
+  <a href="movie-0099.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">都市仙医：火云邪神$火云邪医</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">隐于市井的火云邪神转行当中医，用修仙手段专治各种“现代不服”。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/98.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="都市仙医：火云邪神$火云邪医海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">35</div>
+  <a href="movie-0059.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">大海贼</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">胆小的小男孩被意外卷入传奇海盗的冒险，寻找能实现任何愿望的“海神之心”。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/151.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="大海贼海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">36</div>
+  <a href="movie-0104.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">其实，我乃最强？</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">只想平凡度日的转校生，不知自己随手之举，竟让全校师生误认为他是隐藏的“天灾级”强者。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/24.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="其实，我乃最强？海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">37</div>
+  <a href="movie-0018.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">适合我的酒店</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">厌倦都市的精英女律师，辞职接手一家濒临倒闭的乡村温泉旅馆，遇见真爱。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/72.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="适合我的酒店海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">38</div>
+  <a href="movie-0001.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">国民老公带回家</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">为应付催婚，平凡女孩与顶级财阀继承人签订“假恋爱协议”。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/76.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="国民老公带回家海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">39</div>
+  <a href="movie-0043.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">非人哉第三季</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">中国古代神话妖怪们在现代社会的爆笑日常，第三季迎来更多新神仙妖怪室友！</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/152.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="非人哉第三季海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">40</div>
+  <a href="movie-0073.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">出征十年回京后发现女儿换了人</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">将军戍边十年归来，府中女儿容貌未改，细节习惯却与记忆中的爱女截然不同。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/93.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="出征十年回京后发现女儿换了人海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">41</div>
+  <a href="movie-0112.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">轮回2023</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">为拯救死于恐怖袭击的妻子，科学家不断将意识上传至袭击前的时间锚点，却陷入更可怕的因果漩涡。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/5.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="轮回2023海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">42</div>
+  <a href="movie-0040.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">我来自北京之过年好</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2023</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">一群留京过年的北漂青年，因意外相聚在同一屋檐下，上演了一出温馨爆笑的春节故事。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/105.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="我来自北京之过年好海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">43</div>
+  <a href="movie-0061.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">我妈不是高校生</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2022</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">疲于奔命的单亲妈妈一觉醒来，发现自己回到了17岁高中生的身体里。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/148.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="我妈不是高校生海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">44</div>
+  <a href="movie-0137.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">海贼王特别篇：空岛之章</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2022</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">路飞一行勇闯万米高空之上的空岛，为守护浪漫的钟声与黄金乡的约定而战。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/128.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="海贼王特别篇：空岛之章海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">45</div>
+  <a href="movie-0113.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">黑话律师</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2022</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">一个专打小官司的三流律师，为自证清白，不得不在狱中假扮成传说中的天才罪犯“大老鼠”。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/18.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="黑话律师海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">46</div>
+  <a href="movie-0002.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">天生一对2022</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2022</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">现代失意女编剧，穿越成自己笔下恶毒女配，决心改写命运捕获男主。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/150.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="天生一对2022海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">47</div>
+  <a href="movie-0131.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">郁川浮游</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2022</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">少年发现家乡的河流能让时间变慢，于此徘徊，见证小镇三代人的悲欢流变。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/125.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="郁川浮游海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">48</div>
+  <a href="movie-0021.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">心理测量者SS1：罪与罚</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2022</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">未来世界里，一名少女背负着已处决犯人的“罪孽记忆”，被迫追查真正的元凶。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/45.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="心理测量者SS1：罪与罚海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">49</div>
+  <a href="movie-0042.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">战家冲喜来了个小财神</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2022</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">被迫“冲喜”嫁入落魄将门的商贾之女，竟用财商盘活全家，成了夫君的“小财神”。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/28.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="战家冲喜来了个小财神海报">
+  </div>
+</div><div class="flex items-center gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+  <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-violet-500 text-lg font-black text-white">50</div>
+  <a href="movie-0107.html" class="min-w-0 flex-1">
+    <div class="flex items-center gap-3">
+      <h3 class="truncate text-lg font-semibold text-white">龙御九霄</h3>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">2022</span>
+      <span class="rounded-full bg-white/10 px-2 py-1 text-xs text-slate-300">电影</span>
+    </div>
+    <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-300">少年意外唤醒体内沉睡的祖龙之魂，为拯救苍生，踏上集结上古龙裔的征途。</p>
+  </a>
+  <div class="hidden shrink-0 text-right sm:block">
+    <img src="posters/1.jpg" class="h-20 w-14 rounded-2xl object-cover" alt="龙御九霄海报">
+  </div>
+</div>
+  </div>
+</main>
+<footer class="mt-16 border-t border-white/10 bg-slate-950/70">
+  <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+    <div class="grid gap-6 lg:grid-cols-3">
+      <div>
+        <div class="text-xl font-bold text-white">幻影片库</div>
+        <p class="mt-3 text-sm leading-7 text-slate-300">基于上传素材生成的纯静态影视站，包含首页、热榜、150 个影片详情页与可播放 HLS 播放器。</p>
+      </div>
+      <div>
+        <div class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">统计</div>
+        <p class="mt-3 text-sm text-slate-300">影片数量：150 · 电影：137 · 剧集：13 · 地区：4 类</p>
+      </div>
+      <div>
+        <div class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">导航</div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <a href="index.html" class="rounded-full border border-white/10 px-3 py-1 text-sm text-slate-200 hover:bg-white/10">首页</a>
+          <a href="ranking.html" class="rounded-full border border-white/10 px-3 py-1 text-sm text-slate-200 hover:bg-white/10">热榜</a>
+          <a href="#catalog" class="rounded-full border border-white/10 px-3 py-1 text-sm text-slate-200 hover:bg-white/10">全部影片</a>
+        </div>
+      </div>
+    </div>
+    <p class="mt-8 text-xs text-slate-500">© 幻影片库 · 纯静态生成</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(59,130,246,.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(168,85,247,.14), transparent 24%),
+    radial-gradient(circle at 50% 0%, rgba(34,197,94,.08), transparent 28%),
+    #020617;
+  color: #e2e8f0;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(59,130,246,.7), rgba(168,85,247,.7));
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, .8);
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity .7s ease, transform .7s ease;
+  pointer-events: none;
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.glass-panel {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(2, 6, 23, .58);
+}
+
+.soft-card {
+  background: linear-gradient(180deg, rgba(15,23,42,.95), rgba(15,23,42,.82));
+  box-shadow: 0 20px 45px rgba(0,0,0,.35);
+}
+
+.poster-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.poster-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform .5s ease;
+}
+
+.group:hover .poster-frame img,
+a:hover .poster-frame img {
+  transform: scale(1.06);
+}
+
+.poster-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15,23,42,.08), rgba(2,6,23,.94));
+}
+
+.card-link {
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.28);
+}
+
+.hero-bg {
+  background:
+    linear-gradient(135deg, rgba(15,23,42,.75), rgba(2,6,23,.4)),
+    radial-gradient(circle at 20% 20%, rgba(59,130,246,.35), transparent 24%),
+    radial-gradient(circle at 80% 30%, rgba(168,85,247,.26), transparent 25%),
+    radial-gradient(circle at 50% 80%, rgba(34,197,94,.18), transparent 26%);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hero-dot {
+  width: .75rem;
+  height: .75rem;
+  border-radius: 999px;
+  background: rgba(148,163,184,.35);
+  transition: all .25s ease;
+}
+
+.hero-dot.active {
+  width: 2rem;
+  background: linear-gradient(90deg, #3b82f6, #a855f7);
+}
+
+.search-pill {
+  transition: all .2s ease;
+}
+
+.search-pill.active {
+  background: linear-gradient(90deg, #3b82f6, #a855f7);
+  color: white;
+  border-color: transparent;
+}
